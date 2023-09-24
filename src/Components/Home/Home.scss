@@ -1,0 +1,239 @@
+.banner {
+    height: 400px;
+    background-color: black;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: black;
+        opacity: 0.4;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: white;
+        width: 50%;
+        z-index: 10;
+
+    }
+
+    p {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        color: white;
+        width: 40%;
+        font-weight: 100;
+
+    }
+
+    >div {
+        display: flex;
+
+        >button {
+            padding: 0.5rem;
+            width: 300px;
+            background-color: white;
+            outline: none;
+            border: none;
+            z-index: 10;
+            border-radius: 5px;
+            margin: 0.5rem;
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80%;
+            font-size: 1rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(157, 3, 3);
+                transition: all 0.5s;
+                color: white;
+            }
+        }
+    }
+
+
+
+}
+
+.card {
+    width: 200px;
+    
+    cursor: pointer;
+    transition: transform 0.5s;
+    margin: 0.5rem;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+
+.row {
+    background-color: black;
+    padding: 1rem;
+
+    >h2 {
+        color: white;
+        font-weight: 400;
+    }
+
+    >div {
+        display: flex;
+        overflow-x: auto;
+
+
+    }
+}
+
+.genrebox {
+    height: 100px;
+    display: flex;
+    background-color: black;
+    overflow-x: auto;
+
+    >a {
+        color: black;
+        padding: 1rem 0;
+        margin: 1rem;
+        text-align: center;
+        background-color: white;
+        transition: all 0.5s;
+        border-radius: 3px;
+        min-width: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: rgb(113, 2, 2);
+            color: white;
+        }
+    }
+}
+
+
+@media screen and (max-width:750px) {
+    .banner {
+        height: 500px;
+
+        >h1 {
+            font-size: 2rem;
+        }
+
+        >p {
+            font-size: 0.8rem;
+        }
+    }
+
+}
+
+@media screen and (max-width:840px) {
+    .banner {
+        >div{
+            
+            >button{
+            width: auto ;
+            height: 70%;
+            font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+
+// padding: 0.5rem;
+//             width: 300px;
+//             background-color: white;
+//             outline: none;
+//             border: none;
+//             z-index: 10;
+//             border-radius: 5px;
+//             margin: 0.5rem;
+//             width: 10%;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             height: 80%;
+//             font-size: 1rem;
+//             cursor: pointer;
+
+
+@media screen and (max-width:540px) {
+    .banner {
+        height: 400px;
+
+        >h1 {
+            font-size: 1.7rem;
+        }
+
+        >p {
+            font-size: 0.7rem;
+        }
+
+    }
+
+}
+
+@media screen and (max-width:438px) {
+    .banner {
+        height: 400px;
+
+        >h1 {
+            font-size: 1.6rem;
+        }
+
+        >p {
+            font-size: 0.6rem;
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width:750px) {
+    .card{
+        height: 250px;
+        width: 250px;
+    }
+    .row{
+        >h2{
+            font-size:1.5rem;
+        }
+    }
+    .genrebox{
+        height: 70px;
+        >a{
+            min-width: 7rem;
+        }
+    }}
+@media screen and (max-width:650px) {
+    .card{
+        height: 200px;
+        width: 200px;
+    }
+    .row{
+        >h2{
+            font-size:1.3rem;
+        }
+    }
+    .genrebox{
+        height: 70px;
+        >a{
+            min-width: 7rem;
+        }
+    }
+
+}
